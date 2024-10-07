@@ -7,7 +7,16 @@
     </title>
     <style>
 
+      * {
+        border: 1px red dashed;
+      }
+
+      html {
+        min-height:100%;
+      }
+
       body {
+          min-height:100%;
           display: flex;
           justify-content: center;
           background-image: url("images/Windows.webp");
@@ -15,60 +24,104 @@
           background-size: cover;         /* Scale the image to cover the entire body */
           background-position: center;    /* Center the image */
           background-attachment: fixed;   /* Fix the image during scroll */
+          padding-top: 40px;
+          padding-bottom: 40px;
+          font-family: "Arial";
       }
       
-      .parent {
-          display: flex;
-          flex-direction: column;
+      .main-container {
           align-items: center;
           justify-content: space-around;
-          border: solid blue 5px;
-          width: 40vw;
+          border: solid blue 1px;
+          max-width: 640px;
           height: 95vh;
       }
       
       .image {
           display: flex;
-          flex-direction: column;
-          border: solid black 5px;
-          width: 30vw;
-          height: 40vh;
-          margin-top: 5vh;
+          justify-content: center;
+          border: solid black 1px;
+          margin-bottom: 20px;
       }
+
+      .avatar-image {
+        width:128px;
+        height:128px;
+        object-fit: cover;
+        border-radius: 128px;
+
+      }
+
       .name {
-          display: flex;
-          flex-direction: column;
-          border: solid black 5px;
-          width: 28vw;
-          height: 20vh;
-          margin-top: 5vh;
+          text-align:center;
+          border: solid black 1px;
+          margin-bottom: 30px;
       }
       .social {
           display: flex;
-          flex-direction: column;
-          border: solid black 5px;
-          width: 25vw;
-          height: 60vh;
-          margin-top: 5vh;
+          flex-direction: row;
+          border: solid black 1px;
+          margin-bottom: 30px;
       }
       .links {
           display: flex;
           flex-direction: column;
-          border: solid black 5px;
-          width: 25vw;
-          height: 60vh;
-          margin-top: 5vh;
-          margin-bottom: 5vh;
+          border: solid black 1px;
       }
     </style>
     <meta charset="UTF-8">
   </head>
   <body>
-    <div class="parent">
-      <div class="image">A</div>
-      <div class="name">B</div>
-      <div class="social">C</div>
-      <div class="links">D</div>
+    <div class="main-container">
+      
+      <div class="image">
+        <img src="/images/me.jpg", alt="That is me", class="avatar-image">
+      </div>
+      
+      <div class="name">
+        Jan Kürzel
+      </div>
+      
+      <div class="social">
+        <a href="https://www.facebook.com/jan.kurzel" target="_blank">
+          Facebook
+        </a>
+        <a href="https://www.instagram.com/janku92/" target="_blank">
+          Instagram
+        </a>
+        <a href="https://de.linkedin.com/in/jan-k%C3%BCrzel-92a1391a9" target="_blank">
+          LinkedIn
+        </a>
+
+        <a href="https://www.simcompanies.com/company/0/Meth%20Empire%20in%20the%20Making/" target="_blank">
+          SimCo
+        </a>
+
+      </div>
+      
+      <div class="links">
+
+        <a href="https://www.quora.com/What-are-the-best-aspects-of-living-in-Kassel-Germany-as-a-young-adult" target="_blank">
+          Kassel is Happy
+        </a>
+
+        <a href="https://en.wikipedia.org/wiki/Battle_of_Cannae" target="_blank">
+          Surrounded
+        </a>
+
+        <a href="https://en.wikipedia.org/wiki/Roman_Empire" target="_blank">
+          Never forget the Roman Empire
+        </a>
+
+        <a href="https://www.bergsteigen.com/touren/klettersteig/jubilaeumsgrat-zugspitze/" target="_blank">
+          To do
+        </a>
+
+        <a href="https://en.wikipedia.org/wiki/Raccoon" target="_blank">
+          Signature Animal
+        </a>
+     
+      </div>
     </div>
 
   </body>
