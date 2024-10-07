@@ -68,12 +68,19 @@
           flex-direction: column;
           border: solid black 1px;
       }
+
+      .link-image {
+        height: 48px;
+        width: 48px;
+        border-radius: 48px;
+        object-fit: cover;
+      }
     </style>
     <meta charset="UTF-8">
   </head>
   <body>
     <div class="main-container">
-      
+
       <div class="image">
         <img src="/images/me.jpg", alt="That is me", class="avatar-image">
       </div>
@@ -100,26 +107,47 @@
       </div>
       
       <div class="links">
+        <div class="item">
 
-        <a href="https://www.quora.com/What-are-the-best-aspects-of-living-in-Kassel-Germany-as-a-young-adult" target="_blank">
-          Kassel is Happy
-        </a>
+          <img src="/images/kassel.png" alt="Kassel is the happiest German city 2024" class="link-image">
 
-        <a href="https://en.wikipedia.org/wiki/Battle_of_Cannae" target="_blank">
-          Surrounded
-        </a>
+          <a href="https://www.quora.com/What-are-the-best-aspects-of-living-in-Kassel-Germany-as-a-young-adult" target="_blank">
+            Kassel is Happy
+          </a>
+        </div>
+        <div class="item">
 
-        <a href="https://en.wikipedia.org/wiki/Roman_Empire" target="_blank">
-          Never forget the Roman Empire
-        </a>
+          <img src="/images/helmet.jpg" alt="A Roman Helmet, a symbol for a Roman Soldier" class="link-image">
 
-        <a href="https://www.bergsteigen.com/touren/klettersteig/jubilaeumsgrat-zugspitze/" target="_blank">
-          To do
-        </a>
+          <a href="https://en.wikipedia.org/wiki/Battle_of_Cannae" target="_blank">
+            Surrounded
+          </a>
+        </div>
+        <div class="item">
 
-        <a href="https://en.wikipedia.org/wiki/Raccoon" target="_blank">
-          Signature Animal
-        </a>
+          <img src="/images/spqr.jpg" alt="SPQR, the Roman Empire" class="link-image">
+
+          <a href="https://en.wikipedia.org/wiki/Roman_Empire" target="_blank">
+            Never forget the Roman Empire
+          </a>
+        </div>
+        <div class="item">
+
+          <img src="/images/Berg.webp" alt="A Mountain Symbol" class="link-image">
+
+          <a href="https://www.bergsteigen.com/touren/klettersteig/jubilaeumsgrat-zugspitze/" target="_blank">
+            To do
+          </a>
+        </div>
+
+        <div class="item">
+
+          <img src="/images/waschbaer.png" alt="A Raccoon" class="link-image">
+
+          <a href="https://en.wikipedia.org/wiki/Raccoon" target="_blank">
+            Signature Animal
+          </a>
+        </div>
      
       </div>
     </div>
