@@ -8,6 +8,8 @@
     <style>
 
       body {
+          display: flex;
+          justify-content: center;
           background-image: url("images/Windows.webp");
           background-repeat: no-repeat;   /* Don't repeat the image */
           background-size: cover;         /* Scale the image to cover the entire body */
@@ -17,26 +19,56 @@
       
       .parent {
           display: flex;
-          border: dotted blue 1px;
-          width: 50vw;
-          height: 80vh;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+          border: solid blue 5px;
+          width: 40vw;
+          height: 95vh;
       }
       
-      .child {
+      .image {
           display: flex;
-          border: dotted red 1px;
+          flex-direction: column;
+          border: solid black 5px;
           width: 30vw;
           height: 20vh;
+          margin-top: 5vh;
+      }
+      .name {
+          display: flex;
+          flex-direction: column;
+          border: solid black 5px;
+          width: 28vw;
+          height: 20vh;
+          margin-top: 5vh;
+      }
+      .social {
+          display: flex;
+          flex-direction: column;
+          border: solid black 5px;
+          width: 25vw;
+          height: 60vh;
+          margin-top: 5vh;
+      }
+      .links {
+          display: flex;
+          flex-direction: column;
+          border: solid black 5px;
+          width: 25vw;
+          height: 60vh;
+          margin-top: 5vh;
+          margin-bottom: 5vh;
       }
     </style>
     <meta charset="UTF-8">
   </head>
   <body>
     <div class="parent">
-      <div class="child">A</div>
-      <div class="child">B</div>
-      <div class="child">C</div>
-      <div class="child">D</div>
+      <div class="image">A</div>
+      <div class="name">B</div>
+      <div class="social">C</div>
+      <div class="links">D</div>
     </div>
 
   </body>
