@@ -4,11 +4,21 @@
   <head>
     <title>My Links in Bio</title>
     <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <style>
 
       * {
         border: 1px red dashed;
+        color: rgba(255,255,255,1.0);
       }
 
       html {
@@ -19,28 +29,21 @@
           min-height:100%;
           display: flex;
           justify-content: center;
-          background-image: url("images/Windows.webp");
-          background-repeat: no-repeat;   /* Don't repeat the image */
-          background-size: cover;         /* Scale the image to cover the entire body */
-          background-position: center;    /* Center the image */
-          background-attachment: fixed;   /* Fix the image during scroll */
+          background: linear-gradient(0deg, #a79d02, #b49502, #c08e02, #cd8702, #da7d01, #e66e01, #f35601, #ff0200);
           padding-top: 40px;
           padding-bottom: 40px;
-          font-family: "Arial";
+          font-family: "Raleway";
+          color: rgba(255,255,255,1.0);
       }
       
       .main-container {
-          align-items: center;
-          justify-content: space-around;
-          border: solid blue 1px;
           max-width: 640px;
-          height: 95vh;
+          margin: auto;
       }
       
       .image {
           display: flex;
           justify-content: center;
-          border: solid black 1px;
           margin-bottom: 20px;
       }
 
@@ -54,24 +57,24 @@
 
       .name {
           text-align:center;
-          border: solid black 1px;
           margin-bottom: 30px;
+          font-family: "Playfair Display";
       }
       .social {
           display: flex;
-          flex-direction: row;
-          border: solid black 1px;
+          justify-content: space-around;
           margin-bottom: 30px;
       }
 
       .item {
         display: flex;
         align-items: center;
+        background-color: rgba(112, 101, 10, 0.8);
+        margin-bottom: 20px;
       }
       .links {
           display: flex;
           flex-direction: column;
-          border: solid black 1px;
       }
 
       .link-image {
@@ -79,6 +82,16 @@
         width: 48px;
         border-radius: 48px;
         object-fit: cover;
+      }
+
+      .link-text {
+        text-align: center;
+        flex-grow:1;
+      }
+
+      a {
+        color: rgba(255,255,255,1.0));
+        text-decoration: none;
       }
     </style>
 
@@ -120,7 +133,7 @@
 
           <img src="/images/kassel.png" alt="Kassel is the happiest German city 2024" class="link-image">
 
-          <a href="https://www.quora.com/What-are-the-best-aspects-of-living-in-Kassel-Germany-as-a-young-adult" target="_blank">
+          <a class="link-text" href="https://www.quora.com/What-are-the-best-aspects-of-living-in-Kassel-Germany-as-a-young-adult" target="_blank">
             Kassel is Happy
           </a>
         </div>
@@ -128,7 +141,7 @@
 
           <img src="/images/helmet.jpg" alt="A Roman Helmet, a symbol for a Roman Soldier" class="link-image">
 
-          <a href="https://en.wikipedia.org/wiki/Battle_of_Cannae" target="_blank">
+          <a  class="link-text" href="https://en.wikipedia.org/wiki/Battle_of_Cannae" target="_blank">
             Surrounded
           </a>
         </div>
@@ -136,7 +149,7 @@
 
           <img src="/images/spqr.jpg" alt="SPQR, the Roman Empire" class="link-image">
 
-          <a href="https://en.wikipedia.org/wiki/Roman_Empire" target="_blank">
+          <a  class="link-text" href="https://en.wikipedia.org/wiki/Roman_Empire" target="_blank">
             Never forget the Roman Empire
           </a>
         </div>
@@ -144,7 +157,7 @@
 
           <img src="/images/Berg.webp" alt="A Mountain Symbol" class="link-image">
 
-          <a href="https://www.bergsteigen.com/touren/klettersteig/jubilaeumsgrat-zugspitze/" target="_blank">
+          <a  class="link-text" href="https://www.bergsteigen.com/touren/klettersteig/jubilaeumsgrat-zugspitze/" target="_blank">
             To do
           </a>
         </div>
@@ -153,7 +166,7 @@
 
           <img src="/images/waschbaer.png" alt="A Raccoon" class="link-image">
 
-          <a href="https://en.wikipedia.org/wiki/Raccoon" target="_blank">
+          <a  class="link-text" href="https://en.wikipedia.org/wiki/Raccoon" target="_blank">
             Signature Animal
           </a>
         </div>
